@@ -16,7 +16,6 @@ final class ViewController: UITabBarController {
         
     }
     
-   
     func setupTabBar(){
         let character = CharacterTabBarController()
         let episode = EpisodeTabBarController()
@@ -48,10 +47,6 @@ final class ViewController: UITabBarController {
         locationNav.tabBarItem = UITabBarItem(title: "Localizacion", image: locat, tag: 3)
         settingNav.tabBarItem = UITabBarItem(title: "Configuracion", image: gearshape, tag: 4)
 
-
-
-
-        
         let items = [characterNav, episodeNav, locationNav, settingNav]
         
         for nav in items {
