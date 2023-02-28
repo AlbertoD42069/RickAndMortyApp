@@ -9,5 +9,9 @@ import Foundation
 import UIKit
 
 class EpisodeTabBarController : UIViewController {
-    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+    }
 }

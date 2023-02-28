@@ -6,9 +6,9 @@
 //
 
 import Foundation
-struct ResultsLocation: Codable {
-    let results: [Location]
-}
+//struct ResultsLocation: Codable {
+//    let results: [Location]
+//}
 
 struct Location: Codable {
     var id: Int

@@ -6,9 +6,9 @@
 //
 
 import Foundation
-struct ResultsEpisode: Codable {
-    var results: [Episode]
-}
+//struct ResultsEpisode: Codable {
+//    var results: [Episode]
+//}
 struct Episode: Codable {
     var id: Int
     var name: String

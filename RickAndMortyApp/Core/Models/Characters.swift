@@ -9,9 +9,9 @@ import Foundation
 
 
 
-struct ResultsCharacters {
-    var results: [Character]
-}
+//struct ResultsCharacters {
+  //  var results: [Character]
+//}
 struct Character: Codable {
     var id: Int
     var name: String
