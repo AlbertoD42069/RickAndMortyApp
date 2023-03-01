@@ -11,7 +11,18 @@ import UIKit
 class EpisodeTabBarController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+        services()
+    }
+    private func services(){
+        let _ = Service.shared.executeJSON(.episodeRequest, expecting: EpisodeResponse.self) { result in
+            switch result {
+            case .success(let model):
+                print(String(describing: model))
+            case .failure(let error):
+                print(String(describing: error))
+            }
+            
+        }
+
     }
 }

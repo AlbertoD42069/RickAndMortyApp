@@ -55,6 +55,8 @@ extension Request {
 
 extension Request {
     static let characterRequest = Request(endPoint: .character)
+    static let episodeRequest = Request(endPoint: .episode)
+    static let locationRequest = Request(endPoint: .location)
     
 }
 
