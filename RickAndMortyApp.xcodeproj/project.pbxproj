@@ -17,6 +17,7 @@
 		52AF6ADD29AD9A26005C1363 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF6ADC29AD9A26005C1363 /* Service.swift */; };
 		52AF6ADF29AD9A32005C1363 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF6ADE29AD9A32005C1363 /* Request.swift */; };
 		52AF6AE129AD9A45005C1363 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF6AE029AD9A45005C1363 /* EndPoint.swift */; };
+		52AF6AE429AEF0D6005C1363 /* CharacterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF6AE329AEF0D6005C1363 /* CharacterResponse.swift */; };
 		52CB12E129AC500000CB9BC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CB12E029AC500000CB9BC8 /* AppDelegate.swift */; };
 		52CB12E329AC500000CB9BC8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CB12E229AC500000CB9BC8 /* SceneDelegate.swift */; };
 		52CB12E529AC500000CB9BC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CB12E429AC500000CB9BC8 /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 		52AF6ADC29AD9A26005C1363 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		52AF6ADE29AD9A32005C1363 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		52AF6AE029AD9A45005C1363 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		52AF6AE329AEF0D6005C1363 /* CharacterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterResponse.swift; sourceTree = "<group>"; };
 		52CB12DD29AC500000CB9BC8 /* RickAndMortyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMortyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52CB12E029AC500000CB9BC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52CB12E229AC500000CB9BC8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 		52AF6AC729AD11CB005C1363 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				52AF6AE229AEEBF2005C1363 /* ModelRequest */,
 				52AF6AC429AD0879005C1363 /* Characters.swift */,
 				52AF6ACB29AD13B9005C1363 /* Location.swift */,
 				52AF6ACD29AD13D9005C1363 /* Episode.swift */,
@@ -131,6 +134,14 @@
 				52AF6AE029AD9A45005C1363 /* EndPoint.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		52AF6AE229AEEBF2005C1363 /* ModelRequest */ = {
+			isa = PBXGroup;
+			children = (
+				52AF6AE329AEF0D6005C1363 /* CharacterResponse.swift */,
+			);
+			path = ModelRequest;
 			sourceTree = "<group>";
 		};
 		52CB12D429AC500000CB9BC8 = {
@@ -228,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52AF6AE429AEF0D6005C1363 /* CharacterResponse.swift in Sources */,
 				52AF6AE129AD9A45005C1363 /* EndPoint.swift in Sources */,
 				52AF6AD829AD19FE005C1363 /* LocationTabBarController.swift in Sources */,
 				52AF6ADF29AD9A32005C1363 /* Request.swift in Sources */,

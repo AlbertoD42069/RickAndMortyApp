@@ -7,16 +7,9 @@
 
 import Foundation
 final class Request {
-    private struct Constants {
-        
-        static let baseURL = "https://rickandmortyapi.com/api"
-        
-    }
-    
+
     private let endPoint: EndPoint
-    
-    private let pathComponents: Set<String>
-    
+    private let pathComponents: [String]
     private let queryParameters: [URLQueryItem]
     
     ///Clouser
@@ -27,7 +20,6 @@ final class Request {
         string += endPoint.rawValue
         
         if !pathComponents.isEmpty {
-            
             pathComponents.forEach({
                 string += "/\($0)"
             })
@@ -37,7 +29,6 @@ final class Request {
             
             string += "?"
             let argumentString = queryParameters.compactMap({
-                
                 guard let value = $0.value else { return nil }
                 return "\($0.name)=\(value)"
                 
@@ -47,19 +38,28 @@ final class Request {
         return string
     }
     
-    public var url: URL? {
-        
-     return URL(string: urlString)
-        
-    }
-    
     public let httpMethod = "GET"
-    
-    public init(endPoint: EndPoint, pathComponents: Set<String> = [] , queryParameters: [URLQueryItem] = []) {
-        
+    public init(endPoint: EndPoint, pathComponents: [String] = [] , queryParameters: [URLQueryItem] = []){
         self.endPoint = endPoint
         self.pathComponents = pathComponents
         self.queryParameters = queryParameters
     }
     
+}
+
+extension Request {
+    private struct Constants {
+        static let baseURL = "https://rickandmortyapi.com/api"
+    }
+}
+
+extension Request {
+    static let characterRequest = Request(endPoint: .character)
+    
+}
+
+extension Request {
+    public var url: URL? {
+     return URL(string: urlString)
+    }
 }
